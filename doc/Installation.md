@@ -31,6 +31,11 @@ sudo jed /etc/inspircd/inspircd.conf
        email="nadineducegep@gmail.com">
 ```
 
+```
+sudo service inspircd restart
+```
+
+
 ## Tester avec un client
 
 Installer weechat et se connecer au serveur localement
@@ -45,3 +50,19 @@ weechat
 > /part
 > /quit
 ```
+
+## Se connecter à distance (non-testé)
+
+
+```
+sudo cp /etc/inspircd/inspircd.conf ~/inspircd.conf.local
+sudo jed /etc/inspircd/inspircd.conf
+```
+
+```xml
+<bind address="" port="6667" type="clients">
+```
+```
+sudo service inspircd restart
+```
+

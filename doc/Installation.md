@@ -40,7 +40,7 @@ sudo service inspircd restart
 
 Installer weechat et se connecer au serveur localement
 
-```
+```bash
 sudo apt install weechat
 weechat
 > /server add ici localhost/6667
@@ -53,6 +53,7 @@ weechat
 
 ## Se connecter à distance (non-testé)
 
+Rediriger le nom de domaine (irc.little.courses) vers le serveur avec un CNAME dans namecheap
 
 ```
 sudo cp /etc/inspircd/inspircd.conf ~/inspircd.conf.local

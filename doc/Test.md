@@ -1,7 +1,7 @@
 
 ## Tester avec un client
 
-Se connecer au serveur localement
+Se connecter au serveur localement
 
 ```bash
 sudo apt install weechat
@@ -14,4 +14,10 @@ weechat
 > /quit
 ```
 
-
+```bash
+> /connect ici
+> /join #cafe
+> (moi) /nick maria
+> (maria) /msg NickServ register unmotdepassecomplique maria@email.com 
+> /msg NickServ identify maria unmotdepassecomplique
+```
